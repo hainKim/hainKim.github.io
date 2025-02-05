@@ -1,81 +1,36 @@
-var billy; // variable declaration without definition
+0;//hehe
 
-console.log(billy); 
+Infinity;
 
-billy = 13;
-billy = 'billy is great';
-billy = 'billy said "hello"';
+var kitty; // declared a variable for store space in memory;
 
-// keyword expression codeblock
-if(true){
-    console.log(billy);
+kitty = 5; // definition with a data type of number with the value 5
 
-}
+var Kitty = 24; // semi are end of statement, this line has a definition and declaration
 
-if(5 > 15){
-    console.log('is it true?');
-}
+console.log(Kitty);
 
-billy = "silly";
-if(billy){ // coercion change string to a boolean
-    console.log('billy is silly');
-}
+kitty = Kitty; // = assignnet operator right to left
 
-if(billy === 'silly'){ // === testing for equal value and same type
-    console.log('really silly')
-}
+console.log(kitty);
 
-// == testing for equal value but allows for coercion
-// billy == true
-// billy gets coerced to a boolean and the expression is true
+var doggy;
 
-// typeof operator procedes a variable name or literal value
+console.log(doggy); // undefined
 
-console.log(typeof "sdofihsos");
-console.log(typeof billy);
+var prose = 'phoebe and sparky are so cute'; // ' is a string delimiter
+var moreprose = "is a princess";
 
-if(typeof billy === "string"){
-    billy = 'sdofhsdofisdh';
-}else{
-    billy = 34;
-}
+var x = true;
+x = false;
 
-///////////////
-// for loop
+var ball = {}; // empty object
+ball = null; // null is a datatype in javascript
 
-for(var i = 0; i < 5; i++){
-    console.log('hello');
-}
+//operators
+5 + 5; 
+kitty = 5 + 5;
+var kitty; // becomes undefined cuz we are now referring to a new place in memory
 
-for(var i = 0; i < 10; i++){
-    console.log(i);
-}
-console.log(i);
-///////
-
-// function declaration
-function bob(){
-    console.log('i am bob');
-    return 'bob';
-}
-
-// function invokation
-bob(); /// () function invokation operator
-
-/* multiline comment
-for(var i = 0; i < 10000; i++){
-    bob();
-}
-*/
-
-console.log( bob() );
-
-function bailly(data){
-    data = data + 100; 
-    return data;
-}
-
-var mydata = bailly(50);
-console.log(mydata);
-console.log (typeof mydata);
-
+kitty = 5 + "5";
+console.log(kitty + "sodifhsodih");
