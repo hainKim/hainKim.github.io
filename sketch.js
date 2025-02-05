@@ -1,15 +1,27 @@
-var x = 0;
-var y = 0;
+
 
 function setup(){
-    createCanvas(720,480);
-   }
+    createCanvas(windowWidth,windowHeight);
+}
 
-function draw(){
-    background('#2E8B57');
-    circle(x,y,20,20);
-    x = x + 3;
-    x = x % 720;
-    y = y + 2;
-    y = y % 480;
+function draw (){
+    background(0,200,80,10);
+    fill ('aquamarine');
+    stroke('white');
+
+    for(var i = 0; i < 20000; i++){
+        rect((i*10)%width,(i*10)%height,10,10);
+    }
+    fill ('pink');
+    stroke ('white');
+    for(var i = 10; i < 5000; i++){
+        circle ((i*2)%width, (i*2)%height,20);
+    }
+    fill ('blue');
+    stroke('black');
+    if(mouseX < 200){
+        rect(mouseX,mouseY,100,100);
+    }else{
+        rect(mouseX,mouseY,50,50,25);
+    }
 }

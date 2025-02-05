@@ -1,36 +1,81 @@
-0;//hehe
+var billy; // variable declaration without definition
 
-Infinity;
+console.log(billy); 
 
-var kitty; // declared a variable for store space in memory;
+billy = 13;
+billy = 'billy is great';
+billy = 'billy said "hello"';
 
-kitty = 5; // definition with a data type of number with the value 5
+// keyword expression codeblock
+if(true){
+    console.log(billy);
 
-var Kitty = 24; // semi are end of statement, this line has a definition and declaration
+}
 
-console.log(Kitty);
+if(5 > 15){
+    console.log('is it true?');
+}
 
-kitty = Kitty; // = assignnet operator right to left
+billy = "silly";
+if(billy){ // coercion change string to a boolean
+    console.log('billy is silly');
+}
 
-console.log(kitty);
+if(billy === 'silly'){ // === testing for equal value and same type
+    console.log('really silly')
+}
 
-var doggy;
+// == testing for equal value but allows for coercion
+// billy == true
+// billy gets coerced to a boolean and the expression is true
 
-console.log(doggy); // undefined
+// typeof operator procedes a variable name or literal value
 
-var prose = 'phoebe and sparky are so cute'; // ' is a string delimiter
-var moreprose = "is a princess";
+console.log(typeof "sdofihsos");
+console.log(typeof billy);
 
-var x = true;
-x = false;
+if(typeof billy === "string"){
+    billy = 'sdofhsdofisdh';
+}else{
+    billy = 34;
+}
 
-var ball = {}; // empty object
-ball = null; // null is a datatype in javascript
+///////////////
+// for loop
 
-//operators
-5 + 5; 
-kitty = 5 + 5;
-var kitty; // becomes undefined cuz we are now referring to a new place in memory
+for(var i = 0; i < 5; i++){
+    console.log('hello');
+}
 
-kitty = 5 + "5";
-console.log(kitty + "sodifhsodih");
+for(var i = 0; i < 10; i++){
+    console.log(i);
+}
+console.log(i);
+///////
+
+// function declaration
+function bob(){
+    console.log('i am bob');
+    return 'bob';
+}
+
+// function invokation
+bob(); /// () function invokation operator
+
+/* multiline comment
+for(var i = 0; i < 10000; i++){
+    bob();
+}
+*/
+
+console.log( bob() );
+
+function bailly(data){
+    data = data + 100; 
+    return data;
+}
+
+var mydata = bailly(50);
+console.log(mydata);
+console.log (typeof mydata);
+
