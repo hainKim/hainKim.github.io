@@ -22,6 +22,13 @@ var redBrick = {
         if(this.y > height - this.h|| this.y <0){
             this.ySpeed *= -1;
         }
+    },
+    changeColor: function(){
+        if (this.colour === 'blue'){
+            this.colour = 'red';
+        } else {
+            this.colour = 'blue';
+        }
     }
 };
 
@@ -48,6 +55,13 @@ var blueBrick = {
         if(this.y > height - this.h|| this.y <0){
             this.ySpeed *= -1;
         }
+    },
+    changeColor: function(){
+        if (this.colour === 'blue'){
+            this.colour = 'orange';
+        } else {
+            this.colour = 'blue';
+        }
     }
 };
 
@@ -73,6 +87,13 @@ var yellowBrick = {
         if(this.y - this.w / 2 < 0|| this.y + this.w /2 > height){
             this.ySpeed *= -1;
         }
+    },
+    changeColor: function(){
+        if (this.colour === 'yellow'){
+            this.colour = 'black';
+        } else {
+            this.colour = 'yellow';
+        }
     }
 };
 
@@ -89,4 +110,10 @@ function draw(){
     blueBrick.move();
     yellowBrick.draw();
     yellowBrick.move();
+}
+
+function mousePressed(){
+    redBrick.changeColor();
+    blueBrick.changeColor();
+    yellowBrick.changeColor();
 }
