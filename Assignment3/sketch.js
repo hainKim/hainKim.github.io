@@ -93,7 +93,7 @@ function setup(){
         });
 
         option2.mousePressed(function(){
-            alert("mmm...are you sure?")
+
             option2.hide();
             option1.hide();
             option3.hide();
@@ -105,7 +105,6 @@ function setup(){
         });
 
         option3.mousePressed(function(){
-            alert("HOTPOT?")
             option1.hide();
             option2.hide();
             option3.hide();
