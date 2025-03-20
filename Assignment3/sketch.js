@@ -82,7 +82,6 @@ function setup(){
         });
 
         option1.mousePressed(function(){
-            alert("You chose Brunch Cafe!");
             option1.hide();
             option2.hide();
             option3.hide();
@@ -94,7 +93,7 @@ function setup(){
         });
 
         option2.mousePressed(function(){
-            alert("You chose...broccoli...pizza..?")
+            alert("mmm...are you sure?")
             option2.hide();
             option1.hide();
             option3.hide();
@@ -106,7 +105,7 @@ function setup(){
         });
 
         option3.mousePressed(function(){
-            alert("YES YES HAIDILAO!")
+            alert("HOTPOT?")
             option1.hide();
             option2.hide();
             option3.hide();
@@ -195,6 +194,7 @@ function setup(){
                 button3.position((width/2)-(button3Width/2), (height/2)+50);
                 
                 button3.mousePressed(function(){
+                    alert("Thanks for playing!")
                     button3.hide();
                     option5.hide();
                     option6.hide();
